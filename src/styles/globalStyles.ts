@@ -15,7 +15,7 @@ ${reset}
     color: #424242;
     font-family: 'Pretendard', sans-serif;
     font-weight: 300;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0;
     margin: 0;
     font-size: 18px;
