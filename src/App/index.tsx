@@ -11,19 +11,27 @@ const Container = styled.div`
 const Nav = styled.div`
   width: 100%;
   height: 5rem;
+  background: #239042;
+  position: fixed;
+  top: 0;
 `;
 const Content = styled.div`
-  position: absolute;
-  bottom: 0;
+  margin-top: 5rem;
   width: 100%;
-  height: calc(100% - 5rem);
+  height: 100%;
+  overflow: auto;
+  /* height: calc(100% - 5rem); */
   overflow: auto;
   background: pink;
 `;
 const Content2 = styled.div`
   width: 100%;
-  overflow: auto;
   background: ivory;
+`;
+const LongContent = styled.div`
+  width: 10rem;
+  height: 5000px;
+  background: #ececec;
 `;
 
 const App: React.FC = () => {
@@ -51,146 +59,10 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Nav />
-      <div>
+      <Content>
         안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 <br />
-        안녕하세요
-        <br />
-        <br />
-        <br />
-        <br /> <br />
-        <br />
-        <br />
-        <br /> <br />
-        <br />
-        <br />
-        <br /> <br />
-        <br />
-        <br />
-        <br /> <br />
-        <br />
-        <br />
-        <br />
-        안녕하세요 <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요 안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-        <br />
-        안녕하세요
-      </div>
+        <LongContent />
+      </Content>
     </div>
   );
 };
